@@ -52,3 +52,111 @@ IOT-SmartCity-RealTime-Pipeline/
 ├── .gitignore
 ├── README.md
 └── requirements.txt            # Dependencies
+
+---
+
+## 🚀 How to Run
+
+### 1. Prerequisites
+
+* **Docker Desktop** (Make sure it is running with at least 4GB RAM allocated).
+* **AWS Account** with an S3 Bucket created.
+* **Python 3.9+** installed locally.
+
+### 2. Setup Environment
+
+Clone the repository:
+
+```bash
+git clone [https://github.com/Pawarkunal/IOT-SmartCity-RealTime-Pipeline.git](https://github.com/Pawarkunal/IOT-SmartCity-RealTime-Pipeline.git)
+cd IOT-SmartCity-RealTime-Pipeline
+
+```
+
+Create a `.env` file in the root directory (copy from example):
+
+```bash
+# Create .env file and add your AWS keys
+AWS_ACCESS_KEY=your_access_key_here
+AWS_SECRET_KEY=your_secret_key_here
+
+```
+
+### 3. Start Infrastructure (Docker)
+
+This spins up Kafka, Zookeeper, Spark Master, and Spark Worker.
+
+```bash
+docker-compose up -d --build
+
+```
+
+### 4. Run the Pipeline
+
+**Step A: Submit Spark Job**
+Submit the Spark job to the cluster. This command includes the necessary AWS and Kafka dependencies.
+
+```bash
+docker exec -it spark-master spark-submit \
+  --master spark://spark-master:7077 \
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk-bundle:1.11.901 \
+  jobs/spark-city.py
+
+```
+
+**Step B: Start Data Generation**
+Run the Python script to simulate IoT devices sending data to Kafka.
+
+```bash
+# Install local dependencies first
+pip install -r requirements.txt
+
+# Run the producer
+python src/main.py
+
+```
+
+---
+
+## 📊 Results & Dashboard
+
+### 1. AWS S3 (Data Lake)
+
+Raw data landing in S3 bucket, organized by topic.
+
+### 2. AWS Athena (SQL Analysis)
+
+Querying the raw Parquet data directly using SQL.
+
+### 3. AWS QuickSight (Dashboard)
+
+Final visualization of vehicle locations and traffic density.
+
+---
+
+## 👤 Author
+
+**Kunal Pawar**
+
+* **Role:** Senior Data Engineer
+* **Organization:** Tata Consultancy Services (TCS)
+* **LinkedIn:** [Connect with me](https://www.google.com/search?q=https://linkedin.com/in/kunal-pawar-data-engineer) *(Replace with your real URL)*
+* **GitHub:** [@Pawarkunal](https://www.google.com/search?q=https://github.com/Pawarkunal)
+
+---
+
+## 🤝 Contributing & Feedback
+
+Contributions, issues, and feature requests are welcome!
+If you found this project helpful, please give it a ⭐️ on GitHub.
+
+```
+
+### Next Action for You
+1.  **Create the Folder:** Run `mkdir screenshots` in your project folder.
+2.  **Add Images:** Put your 3-4 screenshots (Architecture, S3, Athena, Dashboard) into that folder.
+3.  **Commit:** `git add .` -> `git commit -m "add readme and screenshots"` -> `git push origin main`.
+
+This will make your repo look 100% professional immediately.
+
+```
