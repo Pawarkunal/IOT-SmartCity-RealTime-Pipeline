@@ -52,7 +52,7 @@ IOT-SmartCity-RealTime-Pipeline/
 ├── .gitignore
 ├── README.md
 └── requirements.txt            # Dependencies
-
+```
 ---
 
 ## 🚀 How to Run
