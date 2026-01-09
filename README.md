@@ -12,7 +12,7 @@ An End-to-End Data Engineering project simulating a real-time Smart City IoT inf
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](screenshots/system-architecture.png)
+![Architecture Diagram](screenshots/system-architecture.jpg)
 *(Please upload an architecture diagram here. See "What I need from you" below)*
 
 **Data Flow:**
