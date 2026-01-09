@@ -97,10 +97,10 @@ docker-compose up -d --build
 Submit the Spark job to the cluster. This command includes the necessary AWS and Kafka dependencies.
 
 ```bash
-docker exec -it spark-master spark-submit \
+docker exec -it spark-master /opt/spark/bin/spark-submit \
   --master spark://spark-master:7077 \
-  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk-bundle:1.11.901 \
-  jobs/spark-city.py
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1,org.apache.hadoop:hadoop-aws:3.3.1,com.amazonaws:aws-java-sdk:1.12.150,org.apache.spark:spark-avro_2.12:3.5.1 \
+  /opt/spark-jobs/smart-city.py
 
 ```
 
