@@ -112,13 +112,13 @@ Run the Python script to simulate IoT devices sending data to Kafka.
 pip install -r requirements.txt
 
 # Run the producer
-python src/main.py
+python /jobs/producer.py
 
 ```
 
 ---
 
-## 📊 Results & Dashboard
+## 📊 Results
 
 ### 1. AWS S3 (Data Lake)
 
@@ -128,19 +128,13 @@ Raw data landing in S3 bucket, organized by topic.
 
 Querying the raw Parquet data directly using SQL.
 
-### 3. AWS QuickSight (Dashboard)
-
-Final visualization of vehicle locations and traffic density.
-
 ---
 
 ## 👤 Author
 
 **Kunal Pawar**
 
-* **Role:** Senior Data Engineer
-* **Organization:** Tata Consultancy Services (TCS)
-* **LinkedIn:** [Connect with me](https://www.google.com/search?q=https://linkedin.com/in/kunal-pawar-data-engineer) *(Replace with your real URL)*
+* **LinkedIn:** [Connect with me](https://www.linkedin.com/in/kunalpawar-in/)
 * **GitHub:** [@Pawarkunal](https://www.google.com/search?q=https://github.com/Pawarkunal)
 
 ---
@@ -149,14 +143,5 @@ Final visualization of vehicle locations and traffic density.
 
 Contributions, issues, and feature requests are welcome!
 If you found this project helpful, please give it a ⭐️ on GitHub.
-
-```
-
-### Next Action for You
-1.  **Create the Folder:** Run `mkdir screenshots` in your project folder.
-2.  **Add Images:** Put your 3-4 screenshots (Architecture, S3, Athena, Dashboard) into that folder.
-3.  **Commit:** `git add .` -> `git commit -m "add readme and screenshots"` -> `git push origin main`.
-
-This will make your repo look 100% professional immediately.
 
 ```
