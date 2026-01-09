@@ -143,5 +143,3 @@ Querying the raw Parquet data directly using SQL.
 
 Contributions, issues, and feature requests are welcome!
 If you found this project helpful, please give it a ⭐️ on GitHub.
-
-```
