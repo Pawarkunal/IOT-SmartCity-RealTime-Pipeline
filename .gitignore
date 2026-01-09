@@ -1,0 +1,8 @@
+.env
+venv/
+.venv/
+.idea/
+.vscode/
+kafka_data/
+zookeeper_data/
+zookeeper_log/
