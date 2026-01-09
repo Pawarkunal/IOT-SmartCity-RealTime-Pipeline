@@ -43,10 +43,10 @@ An End-to-End Data Engineering project simulating a real-time Smart City IoT inf
 IOT-SmartCity-RealTime-Pipeline/
 ├── docker/
 │   └── docker-compose.yaml     # Kafka & Spark Cluster Setup
-|   └── Dockerfile
+│   └── Dockerfile
 ├── jobs/
 │   └── spark-city.py           # Spark Streaming Logic (S3 Write)
-|   └── producer.py             # IOT data producer
+│   └── producer.py             # IOT data producer
 ├── screenshots/                # Project Demos
 ├── .env.example                # Example credentials file
 ├── .gitignore
