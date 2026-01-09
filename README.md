@@ -68,7 +68,7 @@ IOT-SmartCity-RealTime-Pipeline/
 Clone the repository:
 
 ```bash
-git clone [https://github.com/Pawarkunal/IOT-SmartCity-RealTime-Pipeline.git](https://github.com/Pawarkunal/IOT-SmartCity-RealTime-Pipeline.git)
+git clone https://github.com/Pawarkunal/IOT-SmartCity-RealTime-Pipeline.git
 cd IOT-SmartCity-RealTime-Pipeline
 
 ```
