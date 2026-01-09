@@ -133,7 +133,8 @@ Querying the raw Parquet data directly using SQL.
 ## 👤 Author
 
 **Kunal Pawar**
-<a href="https://www.linkedin.com/in/kunalpawar-in/"> <img src="https://img.shields.io/badge/LinkedIn" alt="LinkedIn Badge"/> </a> <a href="https://github.com/Pawarkunal"> <img src="https://img.shields.io/badge/GitHub-100000%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" alt="GitHub Badge"/> </a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kunalpawar-in)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pawarkunal)
 
 ---
 
